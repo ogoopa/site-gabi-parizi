@@ -50,8 +50,67 @@ header ul li{
     font-size: 14px;
 }
 
-h1 {
-    color: var(--color1);
+/* Hero ===================== */
+
+section.hero {
+    /* background-image: url(https://source.unsplash.com/random/1600x1000); */
+    /* background-image: url(https://source.unsplash.com/random/1600x1000); */
+    background: linear-gradient(90deg, rgb(224, 172, 188) 0%, rgb(139, 102, 241) 100%);
+    height: 300px;
+    background-size: cover;
+}
+
+section.hero .hero-content {
+    color: white;
+    
+    }
+    
+section.hero .container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-shadow: 5px 5px 6px rgba(45, 40, 45, 0.3);
+    color: #2d282d;
+}
+    
+section.hero .hero-content h2 {
+    margin: 0;
+    font-size: 32px;
+    font-weight: 1000px;
+    }
+
+section.hero .hero-content p {
+    margin: 8px 0;
+    max-width: 300px;
+    font-size: 14px;
+}
+
+/* Cards ===================== */
+
+section.products {
+    padding: 40px 0;
+    
+}
+
+section.products .container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+section.products .product {
+    background-color: rgb(219, 218, 218);
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    border: 4px solid rgba(216, 216, 216, 0.795);
+    border-radius: 15px;
+    margin: 5px;
+    
+}
+
+footer {
+    align-items: center;
 }
 
 .container {
@@ -63,8 +122,6 @@ h1 {
     /* border: 1px solid yellow; */
 }
 
-/* Footer ===================== */
-
 footer {
     background-color: #363636;
     color: white;
@@ -72,8 +129,6 @@ footer {
     text-align: center;
     overflow-wrap: break-word;
 }
-
-/* Media queries ===================== */
 
 @media screen and (min-width: 576px) {
     .container {
@@ -88,6 +143,15 @@ footer {
     }
     header nav {
         display: block;
+    }
+    section.products .container {
+        flex-direction: row;
+    }
+    
+    section.products .product {
+        width: 33%;
+        margin-bottom: 0;
+        
     }
 }
 
