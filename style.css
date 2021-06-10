@@ -18,9 +18,10 @@ body {
 /* Navbar ===================== */
 
 header {
-    background-color: var(--navfooter);
+    /* background-color: var(--navfooter); */
     color: var(--texto);
     height: 60px;
+    background: linear-gradient(90deg, rgb(224, 172, 188) 0%, rgb(139, 102, 241) 100%);
 }
 
 header img.logo {
