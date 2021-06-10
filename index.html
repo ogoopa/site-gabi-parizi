@@ -104,23 +104,93 @@
                     R. Nossa Sra. Mãe dos Homens, 240 - Vila Progresso, Guarulhos - SP, 07091-020
                     Telefone: (11) 2443-5131
                 </div>
+                <br>
+                <!-- Button trigger modal -->
+                <div class="container">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Agende aqui a sua consulta!
+                    </button>
+                </div>
+                <br>
             </section>
         </main>
 
         <br>
         <!-- Modal -->
-        <form action="">
-            <div class="container">
-                <input type="text" placeholder="Nome">
-                <input type="text" placeholder="Sobrenome">
-                <input type="text" placeholder="Telefone">
-                <input type="email" placeholder="email">
-                <button type="submit">Enviar</button>
-                <button type="submit">Cancelar</button>
+<!-- 
+        <div class="modal-overlay">
+            <div class="modal" >
+                <h2>Agende sua consulta aqui:</h2>
+                <form action="" onsubmit="Form.submit(event)">
+                    <div class="input-group">
+                        <label class="sr-only" for="name">Nome</label>
+                        <input type="text" placeholder="Nome">
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="surname">Sobrenome</label>
+                        <input type="text" placeholder="Sobrenome">
+                    </div>
+                    <div class="input-group">   
+                        <label class="sr-only" for="email">Email</label>               
+                        <input type="email" placeholder="email">
+                    </div>
+                    <div class="input-group">
+                        <label class="sr-only" for="phone">Telefone</label> 
+                        <input type="text" placeholder="Telefone">
+                    </div>
+                    <div class="input-group actions">
+                        <a 
+                            onclick="Modal.toggleClass()"
+                            href="#" 
+                            class="button cancel">Cancelar</a>
+                        <button>Salvar</button>
+                    </div>
+                </form>
             </div>
-        </form>
+        </div> -->
+    
 
-        <br>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Agende aqui a sua consulta:</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="" onsubmit="Form.submit(event)">
+                        <div class="mb-3">
+                            <label class="sr-only" for="name">Nome</label>
+                            <input type="text" placeholder="Nome">
+                        </div>
+                        <div class="mb-3">
+                            <label class="sr-only" for="surname">Sobrenome</label>
+                            <input type="text" placeholder="Sobrenome">
+                        </div>
+                        <div class="mb-3">   
+                            <label class="sr-only" for="email">Email</label>               
+                            <input type="email" placeholder="email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="sr-only" for="phone">Telefone</label> 
+                            <input type="text" placeholder="Telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                          </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Voltar</button>
+                <button type="button" class="btn btn-primary">Enviar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
 
         <!-- Footer -->
         <footer>
@@ -130,5 +200,6 @@
         </footer>
         
         <script src="/script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
     </body>
 </html>   
