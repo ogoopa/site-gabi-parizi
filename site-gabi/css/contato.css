@@ -1,4 +1,9 @@
-.contato {
-   margin: 20px;
-   border: 1px solid black;
+.contato-dados {
+   margin: 0.5rem;
+   display: inline-block;
+}
+
+.contato-map {
+   display: inline-block;
+   margin: 2rem;
 }
