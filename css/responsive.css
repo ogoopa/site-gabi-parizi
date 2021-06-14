@@ -1,0 +1,48 @@
+/* Responsive =============================== */
+
+@media screen and (min-width: 576px) {
+    .divisor {
+        width: 50px;
+        color: var(--texto);
+        padding: 3px;
+        margin: 10px auto;
+        border-radius: 15px; 
+    }
+
+    .container {
+        max-width: 540px;
+        padding: 0;
+    }
+
+    .atendimento-text {
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+
+    section.products .container {
+        flex-direction: row;
+       
+    }
+    
+    section.products .product {
+        width: 33%;
+        margin-bottom: 0;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+   }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+

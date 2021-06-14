@@ -1,9 +1,23 @@
-.contato-dados {
-   margin: 0.5rem;
+.container-contato {
+   width: 55%;
    display: inline-block;
 }
 
+.contato-dados ul {
+   list-style-type: none;
+}
+
+.contato-lista {
+   line-height: 1.5;
+   font-size: 1rem;
+}
+
 .contato-map {
+   width: 40%;
    display: inline-block;
-   margin: 2rem;
+   margin: 0.5rem;
+}
+
+.svg {
+   width: 1rem;
 }

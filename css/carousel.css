@@ -10,7 +10,7 @@
     color: whitesmoke;
 }
 
-/* Responsive =============================== */
+/* Responsive Carousel =============================== */
 
 @media screen and (min-width: 576px) {
     .carousel-item .carousel-content {
