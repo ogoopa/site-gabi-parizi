@@ -1,6 +1,7 @@
 .container-contato {
    width: 55%;
    display: inline-block;
+   vertical-align: top;
 }
 
 .container-contato ul {
@@ -16,6 +17,7 @@
    width: 40%;
    display: inline-block;
    margin: 0.5rem;
+   vertical-align: top;
 }
 
 .svg {
