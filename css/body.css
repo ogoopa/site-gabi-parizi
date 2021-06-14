@@ -6,6 +6,12 @@
     --dark-pink: #f2b5d4;
     --texto: #2d282d;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background: radial-gradient(circle at 10% 20%, rgba(216, 241, 230, 0.46) 0.1%, rgba(233, 226, 226, 0.28) 90.1%);
     margin: 0;
