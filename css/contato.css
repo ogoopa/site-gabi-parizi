@@ -1,7 +1,11 @@
+.container-info {
+   vertical-align: middle;
+   border: 1px solid black;
+}
+
 .container-contato {
    width: 55%;
    display: inline-block;
-   vertical-align: top;
 }
 
 .container-contato ul {
