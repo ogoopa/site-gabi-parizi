@@ -1,0 +1,75 @@
+/* Navbar ===================== */
+header {
+    background-color: var(--dark-blue);
+    color: var(--texto);
+    height: 60px;
+}
+
+header img.logo {
+    max-width: 300px;
+    height: 50px;
+    }
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding-top: 10px;
+}
+
+header nav {
+    display: none;
+}
+
+header ul {
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin-left: 14px;
+    font-size: 14px;
+}
+
+/* Responsive =============================== */
+
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 540px;
+        padding: 0;
+    }
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    header nav {
+        display: block;
+    }
+    section.products .container {
+        flex-direction: row;
+    }
+    
+    section.products .product {
+        width: 33%;
+        margin-bottom: 0;
+        
+    }
+}
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+   }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}

@@ -1,0 +1,10 @@
+/* Footer =============================== */
+
+footer {
+    background-color: #363636;
+    color: white;
+    align-items: center;
+    padding: 15px 0;
+    text-align: center;
+    overflow-wrap: break-word;
+}
