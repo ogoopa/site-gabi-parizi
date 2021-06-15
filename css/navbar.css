@@ -1,5 +1,11 @@
 /* Navbar ===================== */
-header {
+
+.main-nav {
+    background-color: var(--dark-blue);
+    color: var(--texto);
+}
+
+/* header {
     background-color: var(--dark-blue);
     color: var(--texto);
     height: 120px;
@@ -40,7 +46,7 @@ header ul li{
     display: inline-block;
     margin-left: 14px;
     font-size: 14px;
-}
+} */
 
 /* Responsive =============================== */
 
