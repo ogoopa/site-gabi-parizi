@@ -13,6 +13,25 @@
         max-width: 540px;
     } */
 
+    header .container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 100%;
+    }
+    header nav {
+        display: block;
+    }
+    section.products .container {
+        flex-direction: row;
+    }
+    
+    section.products .product {
+        width: 33%;
+        margin-bottom: 0;
+        
+    }
+
     .carousel-item .carousel-content {
         position: absolute;
         font-size: 1em;
