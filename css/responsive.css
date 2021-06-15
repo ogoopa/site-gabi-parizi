@@ -24,9 +24,6 @@
         display: block;
     }
 
-    section.products .container {
-        flex-direction: row;
-    }
 
     section.products .product {
         width: 33%;
@@ -44,11 +41,19 @@
         text-shadow: 0 5px 5px rgba(0, 0, 0, .6);
     }
 
-    .atendimento-text {
-        text-align: center;
-        padding: 50px 0 0 0;
+    section.products .container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 5px;
+        gap: 0.7rem;
     }
 
+    .atendimento-text {
+        text-align: center;
+    }
+    
     .container .container-psicoterapia{
         display: flex;
     }
@@ -63,8 +68,9 @@
         margin-right: 20px;
     }
 
-    .container-psicoterapia-img {
-        visibility: visible;
+    .container .card {
+        width: 90%;
+
     }
 
 }
@@ -84,10 +90,26 @@
         flex-direction: row;
         align-items: center;
         margin-top: 5px;
+        gap: 1rem;
     }
 
     section.products .product {
         flex-grow: 0.2;
+    }
+
+    .container-psicoterapia {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-psicoterapia-img {
+        visibility: visible;
+        display: flex;
+    }
+
+    .container-psicoterapia-img img {
+        flex-grow: 1;
+        /* width: 90%; */
     }
 }
 
@@ -99,10 +121,33 @@
     .container .container-info {
         display: flex;
     }
+
+     .container-contato {
+        flex-grow: 1
+    }
+
+     .contato-map {
+         flex-grow: 2;
+     } 
+
+    .container-psicoterapia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .container-psicoterapia-img {
+        visibility: visible;
+        display: flex;
+    }
 }
 
 @media screen and (min-width: 1200px) {
     /* .container {
         max-width: 1140px;
     } */
+
+    .container-psicoterapia-img {
+        visibility: visible;
+    }
 }

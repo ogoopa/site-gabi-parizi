@@ -13,3 +13,7 @@
     color: var(--texto);
     transform: scale(1.1);
 }
+
+.sr-only {
+    display: none;
+}

@@ -14,3 +14,8 @@ section.products .product {
     margin-top: 10px;
 
 }
+
+.container .card {
+    background-color: var(--light-blue);
+    width: 90%;
+}
