@@ -44,7 +44,7 @@ header ul li{
 
 /* Responsive =============================== */
 
-@media screen and (min-width: 576px) {
+/* @media screen and (min-width: 576px) {
     .container {
         max-width: 540px;
         padding: 0;
@@ -82,4 +82,4 @@ header ul li{
     .container {
         max-width: 1140px;
     }
-}
+} */
