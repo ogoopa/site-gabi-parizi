@@ -28,17 +28,22 @@
         width: 33%;
         margin-bottom: 0;
     }
-    
 }
 @media screen and (min-width: 768px) {
     .container {
         max-width: 720px;
     }
+
 }
 @media screen and (min-width: 992px) {
     .container {
         max-width: 960px;
    }
+
+   .container .container-info {
+    /* border: 1px solid black; */
+    display: flex;
+ }
 }
 @media screen and (min-width: 1200px) {
     .container {
