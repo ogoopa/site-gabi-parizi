@@ -1,4 +1,4 @@
-.container-psicoterapia {
+/* .container-psicoterapia {
     margin: 5% 5%;
     display: flex;
 }
@@ -6,7 +6,7 @@
 .container-psicoterapia-text {
     width: 60%;
     float: left;
-    /* font-size: 20px; */
+    font-size: 20px;
     justify-content: left;
     text-align: justify;
     margin-left: 0;
@@ -24,4 +24,25 @@
 
 .atendimento-text {
     text-align: center;
+} */
+
+/* .container-psicoterapia {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.container-psicoterapia-text p{
+    display: flex;
+    justify-self: center;
+    flex-grow: 5;
+} */
+
+#psicoterapia {
+    margin: 20px 0;
+}
+
+.container-psicoterapia-img {
+    visibility: hidden;
 }
