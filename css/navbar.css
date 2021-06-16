@@ -1,8 +1,13 @@
 /* Navbar ===================== */
 
 .main-nav {
-    background-color: var(--dark-blue);
+    background: linear-gradient(90deg, rgb(178, 195, 245) 0%, rgb(247, 178, 178) 87%);
     color: var(--texto);
+}
+
+.svg-logo {
+    width: 3rem;
+    fill: black;
 }
 
 /* header {
