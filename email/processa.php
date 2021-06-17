@@ -20,13 +20,17 @@
         $mail = new SendGrid\Mail($from, $subject, $to, $content);
         
         //Necessário inserir a chave
-        $apiKey = 'SENDGRID_API_KEY';
+        $apiKey = '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';
         $sg = new \SendGrid($apiKey); 
 
-        $response = $sg->client->mail()->send()->post($mail);
-        echo $response->statusCode();
-        echo $response->headers();
-        echo $response->body();
+        try {
+            $response = $sg->send($mail);
+            echo "<script language='javascript'> window.location = 'index-test-mail.html'</script>";
+
+        } catch (\Exception $e) {
+            echo 'Caught exception: '. $e->getMessage(). "\n";
+        }
+
         ?>
     </body>
 </html>

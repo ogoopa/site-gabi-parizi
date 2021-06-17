@@ -262,35 +262,35 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="https://formsubmit.co/2611956fbc5333fa73f6121750fe9c5c" method="POST"
+                    <form action="https://api.staticforms.xyz/submit" method="POST"
                     onsubmit="Form.submit(event)">
+                    <input type="hidden" name="accessKey" value="a2afbeda-3cdd-4336-aa38-5d66afad073e">
+                    <input type="hidden" name="redirectTo" value="../index.html">
                         <div class="mb-3">
                             <label class="sr-only" for="name">Nome</label>
-                            <input class="form-control" type="text" placeholder="Nome" />
-                            <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html">
-
+                            <input class="form-control" type="text" placeholder="Nome" name="name"/>
                         </div>
-                        <div class="mb-3">
+<!--                         <div class="mb-3">
                             <label class="sr-only" for="surname">Sobrenome</label>
                             <input class="form-control" type="text" placeholder="Sobrenome" />
-                        </div>
+                        </div> -->
                         <div class="mb-3">
                             <label class="sr-only" for="email">Email</label>
-                            <input class="form-control" type="email" placeholder="email" />
+                            <input class="form-control" type="email" placeholder="email" name="email"/>
                         </div>
                         <div class="mb-3">
                             <label class="sr-only" for="phone">Telefone</label>
-                            <input class="form-control" type="text" placeholder="Telefone" />
+                            <input class="form-control" type="text" placeholder="Telefone" name="phone"/>
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Message:</label>
-                            <textarea class="form-control" id="message-text"></textarea>
+                            <textarea class="form-control" id="message-text" name="message"></textarea>
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
                                 Voltar
                             </button>
-                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            <button type="submit" class="btn btn-primary" value="Submit">Enviar</button>
                         </div>
                     </form>
                 </div>

@@ -42,8 +42,11 @@
             <h3>
                 Formulário de Contato
             </h3>
-            <form class="form" method="POST" action="./email/email.php">
-                <input class="field" name="name" placeholder="Nome"  >
+            <form class="form" method="POST" action="https://api.staticforms.xyz/submit">
+                <input type="hidden" name="accessKey" value="a2afbeda-3cdd-4336-aa38-5d66afad073e">
+                <input type="hidden" name="redirectTo" value="../index.html">
+
+                <input class="field" name="name" placeholder="Nome">
                 <input class="field" name="email" placeholder="Email">
                 <textarea class="field" name="message" placeholder="Digite sua mensagem aqui"></textarea>
                 <input type="submit" value="Enviar">
