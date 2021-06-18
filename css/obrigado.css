@@ -1,0 +1,22 @@
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+.box .obrigado {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+}
+
+.obrigado #signature {
+    color: #C02654;
+}
+
+.obrigado a {
+    text-decoration: none;
+}
