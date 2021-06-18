@@ -13,9 +13,9 @@
 
         require 'vendor/autoload.php';
 
-        $from = new SendGrid\Email(null, "gusparizi@gmail.com");
+        $from = new SendGrid\Email(null, "laisgolin@gmail.com");
         $subject = "Confirmar email";
-        $to = new SendGrid\Email(null, "gusparizi@gmail.com");
+        $to = new SendGrid\Email(null, "laisgolin@gmail.com");
         $content = new SendGrid\Content("text/html", "Olá, <br><br>Nova mensagem de contato<br><br>Nome: $nome<br>Email: $email <br>Mensagem: $mensagem");
         $mail = new SendGrid\Mail($from, $subject, $to, $content);
         

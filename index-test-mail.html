@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +17,7 @@
         }
 
         .contato {
-            width: 100%; 
+            width: 100%;
             max-width: 500px;
         }
 
@@ -32,17 +33,18 @@
         }
 
         textarea {
-            height: 150px;        
+            height: 150px;
         }
     </style>
 </head>
+
 <body>
     <section class="content">
         <div class="contato">
             <h3>
                 Formulário de Contato
             </h3>
-            <form class="form" method="POST" action="https://api.staticforms.xyz/submit">
+            <!-- <form class="form" method="POST" action="https://api.staticforms.xyz/submit">
                 <input type="hidden" name="accessKey" value="a2afbeda-3cdd-4336-aa38-5d66afad073e">
                 <input type="hidden" name="redirectTo" value="../index.html">
 
@@ -50,8 +52,38 @@
                 <input class="field" name="email" placeholder="Email">
                 <textarea class="field" name="message" placeholder="Digite sua mensagem aqui"></textarea>
                 <input type="submit" value="Enviar">
+            </form> -->
+
+            <form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+
+                <!-- Replace with your StaticForms accessKey -->
+                <input type="hidden" name="accessKey" value="7eb8b558-4f1f-4edd-ba06-3e841c73e4ba">
+                <input type="hidden" name="subject" value="Test from jsfiddle">
+
+                <!-- Replace with the url you want to redirect to -->
+                <input type="hidden" name="redirectTo" value="https://www.google.com">
+                <div class="field">
+                    <label class="label">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" name="name" placeholder="Enter Your Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" name="email" placeholder="Enter Your Email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" name="message" placeholder="Enter Your Message" required></textarea>
+                    </div>
+                </div>
+                <button class="button is-primary" type="Submit">Submit</button>
             </form>
         </div>
     </section>
 </body>
+
 </html>

@@ -45,22 +45,25 @@
         <div class="main-nav">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container">
-                  
-                  <a class="navbar-brand" href="#"><img class="svg-logo" src="images-svg/logo-site-gabi-cabeca.svg"/> Gabriela Parizi</a>
-                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ms-auto">
-                      <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-                      <a class="nav-link" href="#quemsou">Quem sou</a>
-                      <a class="nav-link" href="#psicoterapia">Psicoterapia</a>
-                      <a class="nav-link" href="#atendimento">Atendimento</a>
-                      <a class="nav-link" href="#contato">Contato</a>
+
+                    <a class="navbar-brand" href="#"><img class="svg-logo" src="images-svg/logo-site-gabi-cabeca.svg" />
+                        Gabriela Parizi</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                            <a class="nav-link" href="#quemsou">Quem sou</a>
+                            <a class="nav-link" href="#psicoterapia">Psicoterapia</a>
+                            <a class="nav-link" href="#atendimento">Atendimento</a>
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </nav>
+            </nav>
         </div>
     </header>
 
@@ -262,25 +265,25 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form action="https://api.staticforms.xyz/submit" method="POST"
+                    <!-- <form action="https://api.staticforms.xyz/submit" method="POST"
                     onsubmit="Form.submit(event)">
                     <input type="hidden" name="accessKey" value="a2afbeda-3cdd-4336-aa38-5d66afad073e">
                     <input type="hidden" name="redirectTo" value="../index.html">
                         <div class="mb-3">
                             <label class="sr-only" for="name">Nome</label>
-                            <input class="form-control" type="text" placeholder="Nome" name="name"/>
+                            <input class="form-control" type="text" placeholder="Nome" name="name" />
                         </div>
-<!--                         <div class="mb-3">
+                        <div class="mb-3">
                             <label class="sr-only" for="surname">Sobrenome</label>
                             <input class="form-control" type="text" placeholder="Sobrenome" />
-                        </div> -->
+                        </div>
                         <div class="mb-3">
                             <label class="sr-only" for="email">Email</label>
-                            <input class="form-control" type="email" placeholder="email" name="email"/>
+                            <input class="form-control" type="email" placeholder="email" name="email" />
                         </div>
                         <div class="mb-3">
                             <label class="sr-only" for="phone">Telefone</label>
-                            <input class="form-control" type="text" placeholder="Telefone" name="phone"/>
+                            <input class="form-control" type="text" placeholder="Telefone" name="phone" />
                         </div>
                         <div class="mb-3">
                             <label for="message-text" class="col-form-label">Message:</label>
@@ -292,7 +295,41 @@
                             </button>
                             <button type="submit" class="btn btn-primary" value="Submit">Enviar</button>
                         </div>
+                    </form> -->
+
+                    <!-- Make sure you don't change the form action-->
+                    <form action="https://api.staticforms.xyz/submit" method="post" onsubmit="Form.submit(event)">
+                        <!-- Replace with accesKey sent to your email -->
+                        <input type="hidden" name="accessKey" value="7eb8b558-4f1f-4edd-ba06-3e841c73e4ba">
+                        <input type="hidden" name="subject" value="Teste do site da Gabi">
+                        <!-- Required -->
+                        <div class="mb-3">
+                            <label class="sr-only" for="name">Nome</label>
+                            <input class="form-control" type="text" placeholder="Nome" name="name" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="sr-only" for="name">Email</label>
+                            <input class="form-control" type="text" placeholder="Email" name="email" />
+                        </div>
+                        <div class="mb-3">
+                            <label class="sr-only" for="name">Phone</label>
+                            <input class="form-control" type="text" placeholder="Phone" name="phone" />
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text" name="message"></textarea>
+                        </div>
+                        <!-- If you want form to redirect to a specific url after submission -->
+                        <input type="hidden" name="redirectTo" value="https://uol.com.br">
+                        <!-- Optional -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                                Voltar
+                            </button>
+                            <button type="submit" class="btn btn-primary" value="Submit">Enviar</button>
+                        </div>
                     </form>
+
                 </div>
             </div>
         </div>
@@ -309,7 +346,7 @@
     <script src="/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-    </script>
+        </script>
 </body>
 
 </html>
